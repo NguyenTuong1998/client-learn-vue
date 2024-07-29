@@ -15,7 +15,7 @@ const state = reactive({
 
 onMounted(async () => {
     try {
-        const response = await axios.get('/api')
+        const response = await axios.get('https://api-learn-vue.vercel.app/jobs')
         state.jobs = response.data
     } catch (error) {
         console.log(error);
