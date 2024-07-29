@@ -35,7 +35,7 @@ const handleDelete = async () => {
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`/api/${jobId}`);
+    const response = await axios.get(`https://api-learn-vue.vercel.app/jobs/${jobId}`);
     state.job = response.data
   } catch (error) {
     console.log(error);
