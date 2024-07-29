@@ -11,7 +11,7 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target: 'https://api-learn-vue.vercel.app/api/jobs',
+        target: 'https://api-learn-vue.vercel.app/jobs',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }

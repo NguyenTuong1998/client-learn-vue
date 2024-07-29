@@ -3,11 +3,13 @@ import HomeView from '@/views/HomeView.vue'
 import JobsView from '@/views/JobsView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import JobView from '@/views/JobView.vue'
+import AddJobView from '@/views/AddJobView.vue'
 
 const routes = [
     { path: '/', name: 'home', component: HomeView },
     { path: '/jobs', name: 'listing-job', component: JobsView },
-    { path: '/job/:id', name: 'JobView', component: JobView },
+    { path: '/jobs/:id', name: 'JobView', component: JobView },
+    { path: '/jobs/add', name: 'JobViewAdd', component: AddJobView },
     { path: '/:catchAll(.*)', name: 'not-found', component: NotFoundView },
 ]
 
