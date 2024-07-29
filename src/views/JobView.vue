@@ -23,7 +23,7 @@ const handleDelete = async () => {
   try {
     const confirm = window.confirm('Are you sure delete job!!!')
     if(confirm){
-      await axios.delete(`/api/${jobId}`)
+      await axios.delete(`https://api-learn-vue.vercel.app/jobs/${jobId}`)
       toast.success('Delete job successfully')
       router.push('/jobs')
     }
